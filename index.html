@@ -18,8 +18,17 @@
             font-family: 'Patrick Hand', cursive;
         }
         @media print {
+            @page {
+                margin: 0;
+                size: auto;
+            }
+            body {
+                margin: 0;
+                padding: 0;
+                background: white;
+            }
             .no-print {
-                display: none;
+                display: none !important;
             }
         }
     </style>
